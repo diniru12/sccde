@@ -137,3 +137,35 @@ h2 {
 .logo-container:hover .circle-background {
     opacity: 0; /* Hide the circle background on hover */
 }
+#presentation {
+    background-color: #1a1a1a;
+    padding: 80px 0;
+}
+
+.presentation-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.presentation-box p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.presentation-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #00ffcc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.presentation-link:hover {
+    background-color: #000;
+    color: #00ffcc;
+}
