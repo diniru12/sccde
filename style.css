@@ -207,7 +207,13 @@ h2 {
     margin-top: 10px;
 }
 /* Add this style to your existing CSS file */
-.library-button {
+.centered-button {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.library-link {
+    display: inline-block;
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
@@ -215,10 +221,9 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px; /* Adjust the margin as needed */
+    text-decoration: none; /* Remove underline from the link */
 }
 
-.library-button:hover {
+.library-link:hover {
     background-color: #0056b3;
 }
-
