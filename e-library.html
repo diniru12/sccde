@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivali Digital Explorers E-Library</title>
+    <title>E-Library</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -21,24 +21,6 @@
 
         h1 {
             margin: 0;
-        }
-
-        nav {
-            background-color: #eee;
-            padding: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
         }
 
         .container {
@@ -60,6 +42,17 @@
             padding: 10px;
             border-radius: 5px;
             text-align: center;
+            cursor: pointer;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            margin: 10px 0;
         }
 
         footer {
@@ -72,32 +65,32 @@
 </head>
 <body>
     <header>
-        <h1>Sivali Digital Explorers E-Library</h1>
+        <h1>E-Library</h1>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Books</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
 
     <div class="container">
         <div class="book-list">
             <!-- Example Book -->
-            <div class="book">
-                <img src="book-cover.jpg" alt="Book Cover">
-                <h3>Book Title</h3>
-                <p>Author: Author Name</p>
-                <button onclick="alert('Book details and actions')">View Details</button>
+            <div class="book" onclick="openPDF('sherlock_holmes1.pdf')">
+                <img src="sherlock_holmes1.jpeg" alt="Book Cover">
+                <h3>A Scandal in Bohemia</h3>
             </div>
-            
-            <!-- Add more books here -->
         </div>
     </div>
 
     <footer>
-        &copy; 2023 Sivali Digital Explorers
+        &copy; 2023 E-Library
     </footer>
+
+    <script>
+        function openPDF(pdfPath) {
+            // Replace the base path with the actual path to your PDF files
+            var basePath = 'library/';
+            var fullPDFPath = basePath + pdfPath;
+
+            // Open the PDF in a new tab/window
+            window.open(fullPDFPath, '_blank');
+        }
+    </script>
 </body>
 </html>
