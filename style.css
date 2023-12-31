@@ -206,10 +206,9 @@ h2 {
 .presentation-credits {
     margin-top: 10px;
 }
-/* Add this style to your existing CSS file */
 .centered-button {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px;
 }
 
 .library-link {
@@ -221,7 +220,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    text-decoration: none; /* Remove underline from the link */
+    text-decoration: none; 
 }
 
 .library-link:hover {
